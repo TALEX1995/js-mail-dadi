@@ -9,7 +9,7 @@ const resultElement = document.getElementById('result');
 
 // Result
 
-let result = 'Parità'
+let result = ''
 
 
 // Variable for min and max
@@ -31,9 +31,11 @@ playButtonElement.addEventListener('click', function() {
 
     // Condition
     if (randomNumberPc > randomNumberPlayer) {
-        result = 'Il computer ha vinto'
+        result = 'Il computer ha vinto';
     }   else if (randomNumberPc < randomNumberPlayer) {
-        result = 'Hai Vinto'
+        result = 'Hai Vinto';
+    }   else {
+        result = 'Parità';
     }
 
     playerNumberElement.innerText = 'Il tuo Numero è ' + randomNumberPlayer;
