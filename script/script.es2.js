@@ -1,5 +1,12 @@
 console.log('JS OK');
 
+// Recover Element from DOM
+
+const playButtonElement = document.getElementById('play-button');
+const playerNumberElement = document.getElementById('player-number');
+const pcNumberElement = document.getElementById('pc-number');
+const resultElement = document.getElementById('result');
+
 // Result
 
 let result = 'Parità'
@@ -25,4 +32,4 @@ if (randomNumberPc > randomNumberPlayer) {
     result = 'Hai Vinto'
 }
 
-console.log(result)
+console.log(result);
