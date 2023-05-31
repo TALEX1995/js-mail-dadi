@@ -45,3 +45,20 @@ Mail
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
 Stampare (in console)
+
+BONUS
+
+Nell'esercizio dadi, mettiamo un tasto "Gioca" ed eseguiamo la logica di gioco al click del bottone
+
+## Svolgimento
+
+1.  Creare una variabile con una stringa "Parità"
+1.  Creare 2 variabili con math.random da 1 a 6 incluso
+1.  Fare una condizione
+
+- **SE** x > y
+  - Ha vinto x e assegnarlo alla variabile creata in precedenza
+- **ALTRIMENTI SE** x < y
+  - Ha vinto y e assegnarlo alla variabile creata in precedenza
+
+1. console.log variabile al punto 1
