@@ -16,3 +16,18 @@ const emailArray = ['alextanase95@gmail.com', 'pippo@gmail.com', 'achille@gmail.
 // Message into DOM
 
 const messageAccess = 'Mi dispiace non è in lista'
+
+
+// Function on click Listener
+
+access.addEventListener('click', function() {
+
+    // Cicle
+    for (let i = 0; i < emailArray.length; i++) {
+        
+        
+    }
+
+})
+
+
