@@ -10,12 +10,12 @@ const messageAccessPlaceholder = document.getElementById('message-access');
 
 // Create Array
 
-const emailArray = ['alextanase95@gmail.com', 'pippo@gmail.com', 'achille@gmail.com', 'spartacus#gmail.com', 'mario@gmail.com', 'drstrange@gmail.com']
+const emailArray = ['alextanase95@gmail.com', 'pippo@gmail.com', 'achille@gmail.com', 'spartacus@gmail.com', 'mario@gmail.com', 'drstrange@gmail.com']
 
 
 // Message into DOM
 
-let messageAccess = ''
+let messageAccess = 'Mi dispiace non è in lista'
 
 
 // Function on click Listener
@@ -29,15 +29,11 @@ access.addEventListener('click', function() {
         const emailUser = emailInput.value;
         
         if (emailUser === emailControl) {
-            messageAccess = 'Prego può entrare'
-        }   else {
-            messageAccess = 'Mi dispiace non è in lista'
-        }
-
-        // Inizialmente ho fatto la condition senza else, in quanto però andando ad inserire una mail esatta mi cambiava il messaggio, poi cancellando l'input e mettendo qualcosa di sbagliato il messaggio non cambiava più e risultava sempre essere prego puoi entrare almeno che non si refreshava la pagina
+            messageAccess = 'Prego può entrare';
+        }   
     }
 
-    console.log(messageAccess);
+    messageAccessPlaceholder.innerText = messageAccess
 })
 
 
