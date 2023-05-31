@@ -15,7 +15,7 @@ const emailArray = ['alextanase95@gmail.com', 'pippo@gmail.com', 'achille@gmail.
 
 // Message into DOM
 
-let messageAccess = 'Mi dispiace non è in lista'
+let messageAccess = ''
 
 
 // Function on click Listener
@@ -30,7 +30,11 @@ access.addEventListener('click', function() {
         
         if (emailUser === emailControl) {
             messageAccess = 'Prego può entrare'
-        }   
+        }   else {
+            messageAccess = 'Mi dispiace non è in lista'
+        }
+
+        // Inizialmente ho fatto la condition senza else, in quanto però andando ad inserire una mail esatta mi cambiava il messaggio, poi cancellando l'input e mettendo qualcosa di sbagliato il messaggio non cambiava più e risultava sempre essere prego puoi entrare almeno che non si refreshava la pagina
     }
 
     console.log(messageAccess);
