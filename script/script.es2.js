@@ -17,19 +17,24 @@ const min = 1
 const max = 6
 
 
-// Random Number
 
-const randomNumberPc = Math.floor(Math.random() * max) + 1;
+// Event Listener Click
 
-const randomNumberPlayer = Math.floor(Math.random() * max) + 1;
-console.log(randomNumberPc, randomNumberPlayer);
+playButtonElement.addEventListener('click', function() {
+    
+    // Random Number
 
-// Condition
+    const randomNumberPc = Math.floor(Math.random() * max) + 1;
 
-if (randomNumberPc > randomNumberPlayer) {
-    result = 'Il computer ha vinto'
-}   else if (randomNumberPc < randomNumberPlayer) {
-    result = 'Hai Vinto'
-}
+    const randomNumberPlayer = Math.floor(Math.random() * max) + 1;
+    console.log(randomNumberPc, randomNumberPlayer);
 
-console.log(result);
+    // Condition
+    if (randomNumberPc > randomNumberPlayer) {
+        result = 'Il computer ha vinto'
+    }   else if (randomNumberPc < randomNumberPlayer) {
+        result = 'Hai Vinto'
+    }
+
+    
+})
