@@ -13,8 +13,8 @@ let result = 'Parità'
 
 
 // Variable for min and max
-const min = 1
-const max = 6
+const min = 1;
+const max = 6;
 
 
 
@@ -36,5 +36,7 @@ playButtonElement.addEventListener('click', function() {
         result = 'Hai Vinto'
     }
 
-    
+    playerNumberElement.innerText = 'Il tuo Numero è ' + randomNumberPlayer;
+    pcNumberElement.innerText = 'Il tuo Numero è ' + randomNumberPc;
+    resultElement.innerText = result;
 })
