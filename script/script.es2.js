@@ -7,9 +7,6 @@ const playerNumberElement = document.getElementById('player-number');
 const pcNumberElement = document.getElementById('pc-number');
 const resultElement = document.getElementById('result');
 
-// Result
-
-let result = ''
 
 
 // Variable for min and max
@@ -22,6 +19,9 @@ const max = 6;
 
 playButtonElement.addEventListener('click', function() {
     
+    // Result
+    let result = 'Parità'
+
     // Random Number
 
     const randomNumberPc = Math.floor(Math.random() * max) + 1;
@@ -34,9 +34,7 @@ playButtonElement.addEventListener('click', function() {
         result = 'Il computer ha vinto';
     }   else if (randomNumberPc < randomNumberPlayer) {
         result = 'Hai Vinto';
-    }   else {
-        result = 'Parità';
-    }
+    }   
 
     playerNumberElement.innerText = 'Il tuo Numero è ' + randomNumberPlayer;
     pcNumberElement.innerText = 'Il tuo Numero è ' + randomNumberPc;
