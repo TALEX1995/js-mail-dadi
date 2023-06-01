@@ -13,15 +13,13 @@ const messageAccessPlaceholder = document.getElementById('message-access');
 const emailArray = ['alextanase95@gmail.com', 'pippo@gmail.com', 'achille@gmail.com', 'spartacus@gmail.com', 'mario@gmail.com', 'drstrange@gmail.com']
 
 
-// Message into DOM
-
-let messageAccess = 'Mi dispiace non è in lista'
-
-
 // Function on click Listener
 
 access.addEventListener('click', function() {
 
+    // Message into DOM
+    let messageAccess = 'Mi dispiace non è in lista'
+   
     // Cicle
     for (let i = 0; i < emailArray.length; i++) {
         
